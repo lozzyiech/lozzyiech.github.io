@@ -1,8 +1,45 @@
-body {
-    background-color: #f0f8ff;
-    font-family: Arial, sans-serif;
+:root {
+    --bg-color: #1a1a1f;
+    --text-color: #fefefe;
+    --accent-color: #c084fc;
+    --link-color: #a78bfa;
+    --card-bg: #2a2a30;
+    --warning-color: #eab308;
+    --error-color: #ef4444;
+    --success-color: #10b981;
+    --subtext-color: #6b7280;
+  }
+
+
+body {background-color: var(--bg-color);}
+
+#background-menu {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 60%;
+    height: 80%;
+    background-color: #2a2a30; /* card-bg */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-h1 {
-    color: #0077cc;
+.menu-item {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.menu-item a {
+    color: #a78bfa; /* link-color */
+    text-decoration: none;
+}
+
+.menu-item a:hover {
+    text-decoration: underline;
 }
