@@ -107,7 +107,7 @@ body {
 }
 
 
-#menu-head {
+.head {
     font-family: 'Roboto Mono', monospace;
     font-weight: 600; /* Полужирный */
     font-size: 40px;
@@ -115,9 +115,18 @@ body {
     margin-bottom: 20px;
     color: #fefefe;
     text-align: center;
-    user-select: none;
-    pointer-events: none;
     letter-spacing: 1px;
     position: relative;
+    cursor: pointer;
     white-space: nowrap;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block; /* Важно для scale анимации */
+    transition: transform 0.1s linear;
+}
+a:hover {
+    text-decoration: none;
+    transform: scale(1.1); /* Увеличиваем на 10% */
 }
